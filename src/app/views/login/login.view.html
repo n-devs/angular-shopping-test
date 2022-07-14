@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Login</h1>
+<form>
+  <div>
+    <label >Email</label>
+    <input type="email" #email placeholder="email">
+  </div>
+  <div>
+    <label >Password</label>
+    <input type="password" #password placeholder="password">
+  </div>
+  <button (click)="login(email.value, password.value)">Login</button>
+</form>

@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Register</h1>
+<form>
+  <div>
+    <label>Full Name</label>
+    <input type="text" #name placeholder="Full Name">
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" #email placeholder="E-Mail">
+  </div>
+  <div>
+    <label>Password</label>
+    <input type="password" #password placeholder="Password">
+  </div>
+  <div>
+    <label>Password Confirm</label>
+    <input type="password" #passwordConf placeholder="Password Confirm">
+  </div>
+  <button (click)="register(name.value,email.value, password.value,passwordConf.value)">Login</button>
+</form>
